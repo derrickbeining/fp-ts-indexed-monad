@@ -4,7 +4,7 @@
 
 <h4 align="center" style="margin-top:0;">
   Indexed Monads for TypeScript.
-</h3>
+</h4>
 
 <p align="center">
   A companion library of
