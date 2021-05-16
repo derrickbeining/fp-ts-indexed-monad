@@ -92,6 +92,9 @@ Added in v2.10.0
   - [ixbind](#ixbind)
   - [ixbindTo](#ixbindto)
   - [ixdiscard](#ixdiscard)
+  - [ixlet](#ixlet)
+  - [let](#let)
+  - [let\_](#let_)
 
 ---
 
@@ -591,7 +594,7 @@ Added in v2.10.0
 **Signature**
 
 ```ts
-export declare const bindTo: <N>(name: N) => <E, A>(fa: IxState<E, E, A>) => IxState<E, E, { readonly [K in N]: A }>
+export declare const bindTo: <N>(name: N) => <R, E, A>(fa: IxState<R, E, A>) => IxState<R, E, { readonly [K in N]: A }>
 ```
 
 Added in v2.10.0
@@ -671,3 +674,42 @@ export declare const ixdiscard: <I, O, Z, A, B>(
 ```
 
 Added in v2.10.0
+
+## ixlet
+
+**Signature**
+
+```ts
+export declare const ixlet: <N, A, B>(
+  name: Exclude<N, keyof A>,
+  val: (a: A) => B
+) => <I, O>(ma: IxState<I, O, A>) => IxState<I, O, { [K in N | keyof A]: K extends keyof A ? A[K] : B }>
+```
+
+Added in v2.10.2
+
+## let
+
+**Signature**
+
+```ts
+export declare const let: <N, A, B>(
+  name: Exclude<N, keyof A>,
+  val: (a: A) => B
+) => <I, O>(ma: IxState<I, O, A>) => IxState<I, O, { [K in N | keyof A]: K extends keyof A ? A[K] : B }>
+```
+
+Added in v2.10.2
+
+## let\_
+
+**Signature**
+
+```ts
+export declare const let_: <N, A, B>(
+  name: Exclude<N, keyof A>,
+  val: (a: A) => B
+) => <I, O>(ma: IxState<I, O, A>) => IxState<I, O, { [K in N | keyof A]: K extends keyof A ? A[K] : B }>
+```
+
+Added in v2.10.2

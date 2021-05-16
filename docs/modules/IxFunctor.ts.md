@@ -19,6 +19,7 @@ Added in v2.10.0
   - [IxFunctor4 (interface)](#ixfunctor4-interface)
 - [utils](#utils)
   - [ixbindTo](#ixbindto)
+  - [ixlet](#ixlet)
 
 ---
 
@@ -83,3 +84,24 @@ export declare function ixbindTo<F extends URIS3>(
 ```
 
 Added in v2.10.0
+
+## ixlet
+
+**Signature**
+
+```ts
+export declare function ixlet<M extends URIS4>(
+  M: IxFunctor4<M>
+): <N extends string, A, B>(
+  name: Exclude<N, keyof A>,
+  val: (a: A) => B
+) => <I, O, E>(ma: Kind4<M, I, O, E, A>) => Kind4<M, I, O, E, { [K in keyof A | N]: K extends keyof A ? A[K] : B }>
+export declare function ixlet<M extends URIS3>(
+  M: IxFunctor3<M>
+): <N extends string, A, B>(
+  name: Exclude<N, keyof A>,
+  val: (a: A) => B
+) => <I, O>(ma: Kind3<M, I, O, A>) => Kind3<M, I, O, { [K in keyof A | N]: K extends keyof A ? A[K] : B }>
+```
+
+Added in v2.10.2
