@@ -37,7 +37,7 @@
   "module": "es6/index.js",
   "name": "fp-ts-indexed-monad",
   "peerDependencies": {
-    "fp-ts": "^2.10.1"
+    "fp-ts": "^2.10.0"
   },
   "repository": {
     "type": "git",
@@ -67,5 +67,5 @@
     "functional-programming"
   ],
   "typings": "lib/index.d.ts",
-  "version": "2.10.0"
+  "version": "2.10.1"
 }
