@@ -1,0 +1,13 @@
+remote_theme: pmarsceill/just-the-docs
+
+# Enable or disable the site search
+search_enabled: true
+
+# Aux links for the upper right navigation
+aux_links:
+  'Docs':
+    - '//derrickbeining.github.io/fp-ts-indexed-monad/'
+  'API Reference':
+    - '//derrickbeining.github.io/fp-ts-indexed-monad/modules/'
+  'GitHub':
+    - '//github.com/derrickbeining/fp-ts-indexed-monad'
