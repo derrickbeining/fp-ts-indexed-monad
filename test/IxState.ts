@@ -28,6 +28,16 @@ describe('IxState', () => {
       deepStrictEqual(M.ixDo()(4), [{}, 4])
     })
 
+    test('ixlet', () => {
+      deepStrictEqual(
+        pipe(
+          M.ixDo<number>(),
+          M.ixlet('sup', () => 'yo')
+        )(100),
+        [{ sup: 'yo' }, 100]
+      )
+    })
+
     test('ixbind', () => {
       deepStrictEqual(
         pipe(
