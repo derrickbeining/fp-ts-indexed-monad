@@ -37,7 +37,7 @@
   "module": "es6/index.js",
   "name": "fp-ts-indexed-monad",
   "peerDependencies": {
-    "fp-ts": "^2.10.0"
+    "fp-ts": "^2.10.1"
   },
   "repository": {
     "type": "git",
