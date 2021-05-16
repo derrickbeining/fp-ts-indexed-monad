@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://travis-ci.org/derrickbeining/fp-ts-indexed-monad">
-    <img src="https://img.shields.io/travis/derrickbeining/fp-ts-indexed-monad/master.svg?style=flat-square" alt="build status" height="20">
+    <img src="https://img.shields.io/travis/derrickbeining/fp-ts-indexed-monad/main.svg?style=flat-square" alt="build status" height="20">
   </a>
   <a href="https://david-dm.org/derrickbeining/fp-ts-indexed-monad">
     <img src="https://img.shields.io/david/derrickbeining/fp-ts-indexed-monad.svg?style=flat-square" alt="dependency status" height="20">
