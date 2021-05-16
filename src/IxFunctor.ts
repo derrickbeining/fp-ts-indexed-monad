@@ -94,12 +94,10 @@ export function ixbindTo<F extends URIS4>(
 export function ixbindTo<F extends URIS3>(
   F: IxFunctor3<F>
 ): <N extends string>(name: N) => <I, O, A>(fa: Kind3<F, I, O, A>) => Kind3<F, I, O, { [K in N]: A }>
-export function ixbindTo<F extends URIS3>(
-  F: IxFunctor3<F>
-): <N extends string>(name: N) => <I, O, A>(fa: Kind3<F, I, O, A>) => Kind3<F, I, O, { [K in N]: A }> {
-  return (name) => (fa) =>
+export function ixbindTo<F extends URIS3>(F: IxFunctor3<F>) {
+  return <N extends string>(name: N) => <I, O, A>(fa: Kind3<F, I, O, A>): Kind3<F, I, O, { [K in N]: A }> =>
     pipe(
       fa,
-      F.ixmap((a) => ({ [name]: a } as any))
+      F.ixmap((a) => ({ [name]: a } as { [K in N]: A }))
     )
 }
