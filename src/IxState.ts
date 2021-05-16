@@ -29,7 +29,7 @@ import { State } from 'fp-ts/State'
 import { IxApplicative3 } from './IxApplicative'
 import { ixapFirst as ixapFirst_, IxApply3, ixapS as ixapS_, ixapSecond as ixapSecond_ } from './IxApply'
 import { ixbind as ixbind_, IxChain3, ixchainFirst as ixchainFirst_, ixDo as ixDo_ } from './IxChain'
-import { ixbindTo as ixbindTo_, ixflap as ixflap_, IxFunctor3 } from './IxFunctor'
+import { ixbindTo as ixbindTo_, ixflap as ixflap_, ixlet as ixlet_, IxFunctor3 } from './IxFunctor'
 import { IxMonad3 } from './IxMonad'
 import { IxPointed3 } from './IxPointed'
 import * as IxStateT from './IxStateT'
@@ -453,6 +453,25 @@ export const ixDo =
  * @since 2.10.0
  */
 export const Do = ixDo
+
+/**
+ * @since 2.10.2
+ */
+export const ixlet =
+  /*#__PURE__*/
+  ixlet_(IxFunctor)
+
+/**
+ * @since 2.10.2
+ */
+export const let_ = ixlet
+
+export {
+  /**
+   * @since 2.10.2
+   */
+  let_ as let,
+}
 
 /**
  * @since 2.10.0

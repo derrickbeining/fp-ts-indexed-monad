@@ -55,6 +55,37 @@ export function ixflap<F extends URIS3>(
 // -------------------------------------------------------------------------------------
 
 /**
+ * @since 2.10.2
+ */
+export function ixlet<M extends URIS4>(
+  M: IxFunctor4<M>
+): <N extends string, A, B>(
+  name: Exclude<N, keyof A>,
+  val: (a: A) => B
+) => <I, O, E>(ma: Kind4<M, I, O, E, A>) => Kind4<M, I, O, E, { [K in keyof A | N]: K extends keyof A ? A[K] : B }>
+export function ixlet<M extends URIS3>(
+  M: IxFunctor3<M>
+): <N extends string, A, B>(
+  name: Exclude<N, keyof A>,
+  val: (a: A) => B
+) => <I, O>(ma: Kind3<M, I, O, A>) => Kind3<M, I, O, { [K in keyof A | N]: K extends keyof A ? A[K] : B }>
+export function ixlet<M extends URIS3>(M: IxFunctor3<M>) {
+  return <N extends string, A, B>(name: Exclude<N, keyof A>, val: (a: A) => B) => {
+    return <I, O>(ma: Kind3<M, I, O, A>): Kind3<M, I, O, { [K in keyof A | N]: K extends keyof A ? A[K] : B }> => {
+      return pipe(
+        ma,
+        M.ixmap(
+          (a) =>
+            Object.assign({}, a, { [name]: val(a) }) as {
+              [K in keyof A | N]: K extends keyof A ? A[K] : B
+            }
+        )
+      )
+    }
+  }
+}
+
+/**
  * @since 2.10.0
  */
 export function ixbindTo<F extends URIS4>(
