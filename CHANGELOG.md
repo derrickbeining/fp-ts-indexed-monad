@@ -26,3 +26,8 @@ high state of flux, you're at risk of it changing without notice.
   - IxPointed
   - IxState
   - IxStateT
+
+## 2.10.1
+
+- **Docs**
+  - fixed some broken links
