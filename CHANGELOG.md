@@ -15,6 +15,14 @@
 **Note**: A feature tagged as Experimental is in a
 high state of flux, you're at risk of it changing without notice.
 
+## 2.10.2
+
+- **Features**
+  - **IxFunctor**
+    - add `ixlet` combinator
+  - **IxState**
+    - add `ixlet` combinator
+
 ## 2.10.1
 
 - **Docs**
