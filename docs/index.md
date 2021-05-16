@@ -19,7 +19,7 @@ nav_order: 1
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/derrickbeining/fp-ts-indexed-monad">
+  <a href="https://travis-ci.com/derrickbeining/fp-ts-indexed-monad">
     <img src="https://img.shields.io/travis/derrickbeining/fp-ts-indexed-monad/main.svg?style=flat-square" alt="build status" height="20">
   </a>
   <a href="https://david-dm.org/derrickbeining/fp-ts-indexed-monad">
