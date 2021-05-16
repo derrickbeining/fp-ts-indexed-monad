@@ -485,7 +485,7 @@ export const ixbind =
  */
 export const ixbindTo =
   /*#__PURE__*/
-  ixbindTo_(IxChain)
+  ixbindTo_(IxFunctor)
 
 /**
  * @since 2.10.0
@@ -499,7 +499,7 @@ export const bind =
  */
 export const bindTo =
   /*#__PURE__*/
-  bindTo_(Chain)
+  bindTo_(Functor)
 
 /**
  * ixDo-notation combinator for discarding the result of a computation rather
