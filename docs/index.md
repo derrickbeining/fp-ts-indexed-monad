@@ -13,7 +13,7 @@ nav_order: 1
 
 <p align="center">
   A companion library of
-  <a href="https://derrickbeining.github.io/fp-ts/">
+  <a href="https://gcanti.github.io/fp-ts/">
     fp-ts
   </a>
 </p>
@@ -50,17 +50,17 @@ npm install fp-ts-indexed-monad
 
 Since `fp-ts-indexed-monad` is meant to be a companion to `fp-ts`, I'm going to make each version match the lowest minor version of `fp-ts` that it is known to be compatible with, so that it's easy to identify which version of `fp-ts-indexed-monad` to use with whatever version of `fp-ts` you may be using. The patch version will incremented for new features and bug fixes.
 
-See the [TypeScript Compatibility](https://github.com/derrickbeining/fp-ts#typescript-compatibility) section of the `fp-ts` README.
+See the [TypeScript Compatibility](https://github.com/gcanti/fp-ts#typescript-compatibility) section of the `fp-ts` README.
 
 # Documentation
 
 - [Docs](https://derrickbining.github.io/fp-ts-indexed-monad)
+- [API Reference](https://derrickbeining.github.io/fp-ts-indexed-monad/modules/)
 - Learning Resources
-  - [fp-ts docs](https://derrickbeining.github.io/fp-ts/learning-resources/)
+  - [fp-ts docs](https://gcanti.github.io/fp-ts/learning-resources/)
   - [Using IxMonad to enforce good hamburger building in Purescript by Justin Woo](https://qiita.com/kimagure/items/a0ee7313e8c7690bf3f5)
   - [Using IxMonad to enforce good hamburger building in TypeScript by Martín Valdés de León](https://medium.com/@mvaldesdeleon/using-ixmonad-to-enforce-good-hamburger-building-in-typescript-bcd584236dd4)
-- [Ecosystem](https://derrickbeining.github.io/fp-ts/ecosystem/)
-- [API Reference](https://derrickbeining.github.io/fp-ts/modules/)
+- [Ecosystem](https://gcanti.github.io/fp-ts/ecosystem/)
 
 # Help
 
@@ -73,7 +73,7 @@ You can ping me and I'll do my best to get back to you quickly. My handle is @db
 
 # Development
 
-- [Code conventions](https://derrickbeining.github.io/fp-ts/guides/code-conventions)
+- [Code conventions](https://gcanti.github.io/fp-ts/guides/code-conventions)
 
 # License
 
