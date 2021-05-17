@@ -49,7 +49,7 @@ See the [TypeScript Compatibility](https://github.com/gcanti/fp-ts#typescript-co
 
 # Documentation
 
-- [Docs](https://derrickbining.github.io/fp-ts-indexed-monad)
+- [Docs](https://derrickbeining.github.io/fp-ts-indexed-monad)
 - [API Reference](https://derrickbeining.github.io/fp-ts-indexed-monad/modules/)
 - Learning Resources
   - [fp-ts docs](https://gcanti.github.io/fp-ts/learning-resources/)
