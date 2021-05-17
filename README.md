@@ -62,7 +62,7 @@ See the [TypeScript Compatibility](https://github.com/gcanti/fp-ts#typescript-co
 If you need help with this library or with `fp-ts` check out:
 
 - this [Discord server](https://discord.gg/HVWmBBXM8A)
-- the `#fp-ts` channel on [FP slack](functionalprogramming.slack.com)
+- the `#fp-ts` channel on [FP slack](https://functionalprogramming.slack.com)
 
 You can ping me and I'll do my best to get back to you quickly. My handle is @dbeining
 
