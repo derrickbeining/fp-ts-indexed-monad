@@ -5,7 +5,7 @@
  * State changes are kept track of by the generics `I`, `O`, `X` and `Z`.
  * - `I` indicates the current input state
  * - `O` indicates the current output state
- * - `Z` indicates the next input state
+ * - `X` indicates the next input state
  * - `Z` indicates the next output state
  *
  * When composing `IxState` where the indexes are polymorhpic, functions `ixchain` and `ixap` can be
@@ -13,8 +13,8 @@
  *
  * Intuitively this is function composition on the indexes.
  *
+ * `IxState` is derived by applying the `Identity` monad to the transformer `IxStateT`.
  *
- * `IxState` derived by applying the `Identity` monad to the transformer `IxStateT`.
  * @since 2.10.0
  */
 
