@@ -1,7 +1,7 @@
 /**
  * @since 2.10.0
  */
-import { HKT4, Kind3, Kind4, URIS3, URIS4 } from 'fp-ts/HKT'
+import { Kind3, Kind4, URIS3, URIS4 } from 'fp-ts/HKT'
 import { pipe } from 'fp-ts/lib/function'
 
 import { IxFunctor3, IxFunctor4 } from './IxFunctor'
@@ -16,8 +16,8 @@ import { IxFunctor3, IxFunctor4 } from './IxFunctor'
  */
 export interface IxApply4<F extends URIS4> extends IxFunctor4<F> {
   readonly ixap: <O, Z, E, A>(
-    fa: HKT4<F, O, Z, E, A>
-  ) => <I, B>(fab: HKT4<F, I, O, E, (a: A) => B>) => HKT4<F, I, Z, E, B>
+    fa: Kind4<F, O, Z, E, A>
+  ) => <I, B>(fab: Kind4<F, I, O, E, (a: A) => B>) => Kind4<F, I, Z, E, B>
 }
 
 /**
