@@ -96,8 +96,8 @@ Added in v2.10.0
 ```ts
 export interface IxApply4<F extends URIS4> extends IxFunctor4<F> {
   readonly ixap: <O, Z, E, A>(
-    fa: HKT4<F, O, Z, E, A>
-  ) => <I, B>(fab: HKT4<F, I, O, E, (a: A) => B>) => HKT4<F, I, Z, E, B>
+    fa: Kind4<F, O, Z, E, A>
+  ) => <I, B>(fab: Kind4<F, I, O, E, (a: A) => B>) => Kind4<F, I, Z, E, B>
 }
 ```
 
